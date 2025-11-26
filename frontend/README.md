@@ -29,7 +29,7 @@ This is the [generated output](./docs/11-26-25-resumechallenge.html) that I will
 This is what the generated HTML looks like unaltered:
 ![](./docs/resume-minimalist-rendered.png)
 
-##HTML Adjustments
+## HTML Adjustments
 
 - UT8 will support most languages, I plan to use English so I will leave this meta tag in. 
 - We will also apply mobile styling to our website so we'll include the viewport meta tag width=device-width so mobile styling scales normally. 
