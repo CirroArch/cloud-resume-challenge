@@ -1,70 +1,16 @@
-# Frontend Technical Specification
+# React + Vite
 
-- Create a static website that serves a html resume.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Resume Format Considerations
+Currently, two official plugins are available:
 
-The resume must be formatted to clearly and concisely convey the applicant's suitability for the position. It should be easy to read and clearly present the relevant information from the applicant's work history and education. 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-I will use the [Harvard Resume Template format](https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/) as the basis of my resume.
+## React Compiler
 
-### Harvard Resume Format Generation
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-I am learning HTML, so I'm going to let GenAI do the heavy lifting and generate the HTML and possibly CSS. Then, I will revise the code to my preferred standard.
+## Expanding the ESLint configuration
 
-Prompt to ChatGPT 5:
-
-```text
-
-Convert this resume into html. 
-Please don't use a css framework. 
-Please use the least amount of css tags
-```
-
-Image provided to LLM:
-![](./docs/harvard-resume-format.jpg)
-
-This is the [generated output](./docs/11-26-25-resumechallenge.html) that I will tweak.
-
-This is what the generated HTML looks like unaltered:
-![](./docs/resume-minimalist-rendered.png)
-
-## HTML Adjustments
-
-- UT8 will support most languages, I plan to use English so I will leave this meta tag in. 
-- We will also apply mobile styling to our website so we'll include the viewport meta tag width=device-width so mobile styling scales normally. 
-- We'll extract our styles into its own stylesheet after we are happy with our HTML markup.
-- We'll simplify our HTML markup css selector to be as minimal as possible. 
-- I will use a tab for indent since I use python as my primary language. 
-
-## Serve Static Website Locally
-
-We need to server our static website locally so that we can start using stylesheets externally from our HTML page in a Cloud Developer Environment (CDE). 
-
-> This is not necessary with local development. 
-
-Assuming we have node install we'll use the simple web-server http-server
-
-### Install HTTP Server
-```sh
-npm i http-server -g
-```
-https://www.npmjs.com/package/http-server
-
-### Server Website
-
-http-server will server a public folder by default whwere the command is run.
-
-```sh
-cd frontend
-http-server
-```
-
-
-
-
-
-
-
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
