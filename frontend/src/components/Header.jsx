@@ -6,7 +6,7 @@ export default function Header() {
         <h1>SJ Porter's Cloud Engineer Résumé</h1>
             <nav>
                <a href="/">Home</a>
-               <a href="/resume.html">Résumé</a>
+               <a className="active" href="/resume.html">Résumé</a>
                <a href="/projects.html">Projects</a>
             </nav>
         </header>
