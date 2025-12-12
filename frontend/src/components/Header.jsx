@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
 export default function Header() {
     return (
-        <header>
-        <h1>SJ Porter's Cloud Engineer Résumé</h1>
+        <header className="navigation">
+            <h1>SJ Porter's Cloud Engineer Résumé</h1>
             <nav>
-               <a href="/">Home</a>
-               <a className="active" href="/resume.html">Résumé</a>
-               <a href="/projects.html">Projects</a>
+                <a href="/">Home</a>
+                <a className="active" href="/resume">Résumé</a>
+                <a href="/projects">Projects</a>
             </nav>
         </header>
-    );
-    }
+    )
+}

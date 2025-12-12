@@ -3,16 +3,6 @@ import React from "react";
 export default function Resume() {
   return (
     <>
-      <section className="navigation">
-        <header>
-          <nav>
-            <a href="/">Home</a>
-            <a href="/resume.html">Résumé</a>
-            <a href="/projects.html">Projects</a>
-          </nav>
-        </header>
-      </section>
-
       <div className="container">
         <header className="header">
           <div className="name">SJ Porter</div>
@@ -73,7 +63,7 @@ export default function Resume() {
 
         <section>
           <h2>Certifications</h2>
-          <ul>
+          <ul className="cert-list">
             <li>GIAC Security Essentials (GSEC)</li>
             <li>GIAC Certified Incident Handler (GCIH)</li>
             <li>GIAC Certified Enterprise Defender (GCED)</li>
