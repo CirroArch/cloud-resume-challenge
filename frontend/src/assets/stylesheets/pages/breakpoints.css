@@ -1,0 +1,5 @@
+@custom-media --mobile (width < 36rem);
+@custom-media --xs (width >= 20rem);
+@custom-media --sm (width >= 36rem);
+@custom-media --md (width >= 48rem);   
+@custom-media --lg (width >= 64rem);    

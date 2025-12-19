@@ -118,3 +118,78 @@ ul {
 .cert-list li {
   margin: 0;
 }
+
+/* Mobile optimizations */
+@media (--mobile) {
+  .navigation {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .navigation h1 {
+    font-size: 18px;
+  }
+
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation nav a {
+    margin: 5px 0;
+  }
+
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .cert-list {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-left, .edu-right {
+    width: 100%;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-title, .job-location {
+    display: block;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
